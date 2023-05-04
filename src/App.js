@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1>HELLO ITS ME</h1>
+        <h1>HELLO ITS ME, new commit</h1>
          <input onFocus={() => setIsShowSearchButtons(true)}
 									onBlur={() => {
 										setTimeout(() => setIsShowSearchButtons(false), 0);
