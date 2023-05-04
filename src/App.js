@@ -12,16 +12,6 @@ function App() {
 		let height = window.visualViewport.height;
 		let viewport = window.visualViewport;
 
-    useEffect(() => {
-    window.visualViewport.addEventListener("resize", resizeHandler);
-
-		function resizeHandler() {
-			if (!/iPhone|iPad|iPod/.test(window.navigator.userAgent)) {
-				height = viewport.height;
-			}
-			button.style.bottom = `${height - viewport.height + 10}px`;
-		}
-	}, [isShowSearchButtons]);
 
   function blurHandler() {
 	// 	button.style.bottom = "0";
