@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.searchbox__btns-wrapper {
+  @media(max-width: 767px) {
+    width: 100%;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: space-between;
+		column-gap: 16px;
+		padding: 16px;
+		border-radius: 16px 16px 0px 0px;
+		z-index: 1010;
+		background-color: var(--color-white);
+		button {
+			flex: 1;
+		}
+  }
+}
