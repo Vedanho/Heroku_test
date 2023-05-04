@@ -8,10 +8,24 @@ function App() {
 
   const [isShowSearchButtons, setIsShowSearchButtons] = useState(false);
 
-  let button = document?.querySelectorAll(".searchbox__btns-wrapper");
-		let height = window.visualViewport.height;
-		let viewport = window.visualViewport;
+  let button
+		let height 
+		let viewport 
 
+    useEffect(() => {
+      window.visualViewport.addEventListener("resize", resizeHandler);
+      button = document?.querySelector(".searchbox__btns-wrapper");
+      height = window.visualViewport.height;
+      viewport = window.visualViewport;
+      function resizeHandler() {
+        if (!/iPhone|iPad|iPod/.test(window.navigator.userAgent)) {
+          height = viewport.height;
+        }
+        button.style.bottom = `${height - viewport.height + 10}px`;
+      }
+  
+      return () => window.visualViewport.removeEventListener("resize", resizeHandler);
+    }, [isShowSearchButtons]);
 
   function blurHandler() {
 	// 	button.style.bottom = "0";
@@ -23,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1>HELLO ITS ME, new commit. And i am here</h1>
+        <h1>HELLO ITS ME,and i am good</h1>
          <input onFocus={() => setIsShowSearchButtons(true)}
 									onBlur={() => {
 										setTimeout(() => setIsShowSearchButtons(false), 0);
