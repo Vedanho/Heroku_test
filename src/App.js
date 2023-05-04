@@ -8,12 +8,11 @@ function App() {
 
   const [isShowSearchButtons, setIsShowSearchButtons] = useState(false);
 
-
-  useEffect(() => {
   let button = document?.querySelectorAll(".searchbox__btns-wrapper");
 		let height = window.visualViewport.height;
 		let viewport = window.visualViewport;
 
+    useEffect(() => {
     window.visualViewport.addEventListener("resize", resizeHandler);
 
 		function resizeHandler() {
@@ -34,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        <h1>HELLO ITS ME</h1>
          <input onFocus={() => setIsShowSearchButtons(true)}
 									onBlur={() => {
 										setTimeout(() => setIsShowSearchButtons(false), 0);
