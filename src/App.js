@@ -24,18 +24,13 @@ function App() {
     <div className="App">
       <div className="App-header">
         <h1>HELLO ITS ME,and i am good</h1>
-        <ReactModal isOpen={true} className="auth-modal-content"
-         onFocus={true} 
-         autoFocus={true} 
-         fieldWidth={isMobile ? 44 : 56}
-					fieldHeight={isMobile ? 44 : 56}> 
-
-
+        <ReactModal isOpen={true} className="auth-modal-content"> 
         <form className="auth-modal__form" onSubmit={(e) => e.preventDefault()}>
 				<div className="auth-modal__code-wrapper">
 					<div className="auth-modal__code">
 						<ReactCodeInput
-						
+						 fieldWidth={isMobile ? 44 : 56}
+             fieldHeight={isMobile ? 44 : 56}
 							fields={4}
 							autoFocus={true}
 						/>

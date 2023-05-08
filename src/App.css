@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.auth-modal__code-wrapper {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+	@media (max-width: 767px) {
+		column-gap: 20px;
+		justify-content: space-between;
+	}
+	@media (max-width: 350px) {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+}
