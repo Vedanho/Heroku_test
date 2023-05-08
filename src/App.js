@@ -26,14 +26,10 @@ function App() {
         <h1>HELLO ITS ME!</h1>
         <ReactModal isOpen={true} className="auth-modal-content"> 
         <form className="auth-modal__form" onSubmit={(e) => e.preventDefault()}>
-				<div className="auth-modal__code-wrapper">
-					<div className="auth-modal__code">
 						<ReactCodeInput
             						fieldWidth={50}
 							fields={4}
 						/>
-					</div>
-          </div>
         </form>
         </ReactModal>
   
