@@ -6,24 +6,11 @@ import ReactModal from "react-modal";
 
 
 function App() {
-  const useWindowSize = () => {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-      function updateSize() {
-        setSize([window.innerWidth, document.documentElement.offsetHeight]);
-      }
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-  };
-  const isMobile = useWindowSize()[0] < 767;
-
+  
   return (
     <div className="App">
       <div className="App-header">
-        <h1>HELLO ITS ME!</h1>
+        <h1>HELLO ITS ME and i tired!!!</h1>
         <ReactModal isOpen={true} className="auth-modal-content"> 
         <form className="auth-modal__form" onSubmit={(e) => e.preventDefault()}>
 						<ReactCodeInput
