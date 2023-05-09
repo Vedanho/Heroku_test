@@ -14,7 +14,6 @@ function App() {
         <ReactModal isOpen={true} className="auth-modal-content"> 
         <form className="auth-modal__form" onSubmit={(e) => e.preventDefault()}>
 						<ReactCodeInput
-              fieldWidth={50}
 							fields={4}
 						/>
         </form>
