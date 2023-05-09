@@ -51,3 +51,23 @@
 		row-gap: 10px;
 	}
 }
+
+
+
+.ReactModalPortal .ReactModal__Overlay {
+  display: flex;
+		justify-content: center;
+		//align-items: center;
+		background-color: rgba(0, 0, 0, 0.05) !important;
+		backdrop-filter: blur(6px);
+		z-index: 10030;
+}
+
+.ReactModal__Overlay .ReactModal__Content {
+  position: relative !important;
+  width: auto;
+  height: auto;
+  border: none !important;
+  border-radius: 8px !important;
+
+}
