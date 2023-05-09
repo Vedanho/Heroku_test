@@ -10,13 +10,15 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1>HELLO ITS ME and i tired very much!!!</h1>
+        <h1>HELLO ITS ME!</h1>
+        <ReactModal isOpen={true} className="auth-modal-content"> 
         <form className="auth-modal__form" onSubmit={(e) => e.preventDefault()}>
 						<ReactCodeInput
-            						fieldWidth={50}
+              fieldWidth={50}
 							fields={4}
 						/>
         </form>
+        </ReactModal>
   
       </div>
     </div>
