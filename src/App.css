@@ -61,6 +61,8 @@
 		background-color: rgba(0, 0, 0, 0.05) !important;
 		backdrop-filter: blur(6px);
 		z-index: 10030;
+    position: absolute;
+    bottom: 0
 }
 
 .ReactModal__Overlay .ReactModal__Content {
