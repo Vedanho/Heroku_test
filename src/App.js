@@ -6,6 +6,22 @@ import ReactModal from "react-modal";
 
 
 function App() {
+
+  function CustomCodeInput() {
+    const [code, setCode] = useState(new Array(4).fill(""))
+
+    return (
+        <div>
+            {code.map((_, index) => (
+                <>
+                <input type="number" className='code-input'/> {
+                    
+                }
+                </>
+            ))}
+        </div>
+    );
+}
   
   return (
     <div className="App">
@@ -13,8 +29,7 @@ function App() {
         <h1>HELLO ITS ME!</h1>
         <ReactModal isOpen={true} className="auth-modal-content"> 
         <form className="auth-modal__form" onSubmit={(e) => e.preventDefault()}>
-						<ReactCodeInput
-							fields={4}
+						<CustomCodeInput
 						/>
         </form>
         </ReactModal>
