@@ -32,6 +32,7 @@ function App() {
 						<CustomCodeInput
 						/>
         </form>
+        <textarea />
         </ReactModal>
   
       </div>
