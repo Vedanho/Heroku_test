@@ -132,7 +132,7 @@
 	row-gap: 24px;
 	padding: 24px;
 	border-radius: 24px;
-	background-color: var(--color-white);
+	background-color: #ffff;
 
 	@media (max-width: 767px) {
 		position: fixed;
@@ -311,4 +311,43 @@
   border: none !important;
   background-color: transparent !important;
   padding: 0 !important;
+
+}
+
+.ReactModal__Content {
+	min-width: 400px;
+	@media (max-width: 768px) {
+		position: absolute;
+		inset: 0;
+		min-width: 0;
+	}
+}
+
+.ReactModal__Overlay {
+	display: grid;
+	place-items: center;
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	z-index: 1100;
+	@media (min-width: 769px) and (max-width: 991px) {
+		align-items: center;
+	}
+}
+
+
+.ReactModal__Overlay {
+	display: flex !important;
+	justify-content: center;
+	@media (max-width: 500px) {
+		place-items: end !important;
+	}
+}
+
+.ReactModalPortal .ReactModal__Overlay .ReactModal__Content {
+	position: relative !important;
+	inset: auto !important;
+	@media (max-width: 500px) {
+		width: 100% !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
 }
