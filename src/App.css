@@ -296,3 +296,7 @@
 	padding-left: 52px;
 	word-break: break-word;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}
