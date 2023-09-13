@@ -28,6 +28,7 @@ function App() {
 				<h1>HELLO ITS ME!</h1>
 				<button onClick={() => setIsShowReviewModal(true)}>Show modal</button>
 				<ReactModal
+					className={"auth-modal-content"}
 					isOpen={isShowReviewModal}
 					onRequestClose={handleCloseModal}
 					style={{

@@ -300,3 +300,14 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+.auth-modal-content {
+  outline: 0 !important;
+  inset: 0 !important;
+  position: relative !important;
+  max-width: 420px;
+  min-height: 384px;
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
