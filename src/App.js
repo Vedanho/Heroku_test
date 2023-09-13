@@ -25,7 +25,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="App-header">
-				<h1>HELLO ITS ME!</h1>
+				<h1>HELLO ITS ME!#1</h1>
 				<button onClick={() => setIsShowReviewModal(true)}>Show modal</button>
 				<ReactModal
 					className={"auth-modal-content"}
@@ -75,6 +75,7 @@ function App() {
 									maxLength={1000}
 									onFocus={() => (document.body.style.touchAction = "pinch-zoom")}
 									onBlur={() => (document.body.style.touchAction = "auto")}
+                  
 								/>
 								<span className="review-modal__area-label text-md">Ваш отзыв</span>
 							</div>
